@@ -1,0 +1,33 @@
+// color palette
+$primary-color: #000000;
+$secondary-color: #ffffff;
+$tertiary-color: #ededed;
+
+$hover-color: #bebebe;
+$border-color: #cccccc;
+
+$white: #ffffff;
+$black: #000000;
+$red: #ff0000;
+$yelow: #fff000;
+
+// font sizes
+$fz_14: size(14);
+$fz_15: size(15);
+$fz_16: size(16);
+$fz_18: size(18);
+$fz_20: size(20);
+$fz_24: size(24);
+$fz_32: size(32);
+
+$font-title: $fz_32;
+$font-content: $fz_16;
+
+// font weights
+$font-light: 300;
+$font_regular: 400;
+$font_medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 900;

@@ -1,0 +1,11 @@
+// reset styles
+@import 'base/reset';
+
+// helpers
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/style-guide';
+
+// themes
+@import 'components/themes/header';
+@import 'components/themes/footer';
