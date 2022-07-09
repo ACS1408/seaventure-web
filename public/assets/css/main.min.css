@@ -9736,6 +9736,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.main-header {
+  padding: 15px 0;
+}
 .main-header .container {
   display: flex;
   justify-content: space-between;
@@ -9763,6 +9766,7 @@ textarea.form-control-lg {
 }
 .main-header .main-nav li a {
   text-decoration: none;
+  color: #000;
 }
 
 /*# sourceMappingURL=main.min.css.map */
