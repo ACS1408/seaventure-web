@@ -6,18 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Fonts: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <!-- main stylesheet -->
     <link rel="stylesheet" href="/assets/css/main.min.css">
     <!-- common stylesheet -->
     <link rel="stylesheet" href="/assets/css/components/common.css">
     <!-- component stylesheets -->
+    <link rel="stylesheet" href="/assets/css/components/home/home-banner.css">
     
     <title>Seaventure | Home</title>
 </head>
 <body>
     <%- include('partials/header') %>
     <main class="homepage">
-        <h1>Home</h1>
+        <section class="home-banner" style="background-image: url('/assets/images/home/home-banner.jpg')">
+            <div class="container">
+                <div class="home-banner__contents">
+                    <h1 class="home-banner__title">Lorem ipsum sit dolor amet</h1>
+                    <p class="home-banner__description">Voluptate proident aliqua ea sunt amet pariatur pariatur Lorem deserunt eiusmod laboris nisi cupidatat. Ut dolore ipsum dolor ea reprehenderit commodo tempor ad.</p>
+                    <div class="btn-wrap">
+                        <a href="/about" class="btn btn-primary">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <%- include('partials/footer') %>
     <!-- pagescript -->

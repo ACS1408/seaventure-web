@@ -1,11 +1,14 @@
 // Bootstrap 5
 @import 'bootstrap/bootstrap';
 
-// reset styles
-@import 'base/reset';
 // helpers
 @import 'helpers/variables';
 @import 'helpers/mixins';
+
+// reset styles
+@import 'base/reset';
+
+// helpers
 @import 'helpers/style-guide';
 
 // themes
