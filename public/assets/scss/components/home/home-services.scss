@@ -1,0 +1,13 @@
+@import '../../helpers/mixins';
+@import '../../helpers/variables';
+@import '../../helpers/extensions';
+
+.home-services {
+    padding: 80px 0;
+    &__title {
+        @extend %section-title;
+    }
+    &__description {
+        @extend %section-description;
+    }
+}

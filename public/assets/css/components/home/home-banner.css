@@ -21,11 +21,12 @@
   position: relative;
 }
 .home-banner__title {
-  font-size: 4.625rem;
+  font-size: 3.625rem;
   font-weight: 600;
   line-height: 1.1;
   color: #ffffff;
   margin-bottom: 10px;
+  max-width: 425px;
 }
 .home-banner__description {
   font-size: 1rem;

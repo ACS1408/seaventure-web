@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Media Queries
 @mixin min($breakpoint, $property: width) {
     @media screen and (min-#{$property}: #{$breakpoint}px) {
@@ -46,6 +48,6 @@
 // px-rem conversion
 @function size($size, $base: 16) {
     $rem: ();
-    $rem: $size / $base * 1rem;
+    $rem: math.div($size, $base) * 1rem;
     @return $rem;
 }
