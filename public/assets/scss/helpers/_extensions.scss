@@ -1,18 +1,21 @@
+%section-subtitle {
+    font-size: size(16);
+    font-weight: $font_medium;
+    line-height: 1;
+    color: $primary-color;
+    margin-bottom: 10px;
+}
 %section-title {
     font-size: size(32);
     font-weight: $font-semibold;
     color: $black;
-    text-align: center;
     max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 %section-description {
     font-size: size(16);
     font-weight: $font-regular;
     color: $black;
-    text-align: center;
     max-width: 500px;
-    margin: 0 auto;
     margin-bottom: 40px;
 }

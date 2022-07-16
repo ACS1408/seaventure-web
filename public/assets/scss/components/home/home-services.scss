@@ -4,6 +4,9 @@
 
 .home-services {
     padding: 80px 0;
+    &__subtitle {
+        @extend %section-subtitle;
+    }
     &__title {
         @extend %section-title;
     }

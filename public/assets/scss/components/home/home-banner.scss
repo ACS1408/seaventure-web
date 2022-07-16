@@ -2,8 +2,10 @@
 @import '../../helpers/variables';
 
 .home-banner {
-    background-size: cover;
+    background-size: 110%;
+    background-position: center 20%;
     padding-top: 85px;
+    animation: bannerScale 2s ease-out 1 forwards;
     &::before {
         content: "";
         width: 100%;
@@ -23,12 +25,12 @@
         position: relative;
     }
     &__title {
-        font-size: size(58);
+        font-size: size(68);
         font-weight: $font_semibold;
         line-height: 1.1;
         color: $white;
-        margin-bottom: 10px;
-        max-width: 425px;
+        margin-bottom: 15px;
+        max-width: 500px;
     }
     &__description {
         font-size: size(16);
@@ -36,5 +38,14 @@
         line-height: 1.7;
         color: $white;
         margin-bottom: 35px;
+    }
+}
+
+@keyframes bannerScale {
+    0% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
     }
 }

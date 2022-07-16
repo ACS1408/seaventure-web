@@ -2,3 +2,16 @@ body {
     font-size: size(16);
     font-family: $font-poppins;
 }
+
+figure {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

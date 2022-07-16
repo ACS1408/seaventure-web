@@ -1,6 +1,8 @@
 .home-banner {
-  background-size: cover;
+  background-size: 110%;
+  background-position: center 20%;
   padding-top: 85px;
+  animation: bannerScale 2s ease-out 1 forwards;
 }
 .home-banner::before {
   content: "";
@@ -21,12 +23,12 @@
   position: relative;
 }
 .home-banner__title {
-  font-size: 3.625rem;
+  font-size: 4.25rem;
   font-weight: 600;
   line-height: 1.1;
   color: #ffffff;
-  margin-bottom: 10px;
-  max-width: 425px;
+  margin-bottom: 15px;
+  max-width: 500px;
 }
 .home-banner__description {
   font-size: 1rem;
@@ -34,6 +36,15 @@
   line-height: 1.7;
   color: #ffffff;
   margin-bottom: 35px;
+}
+
+@keyframes bannerScale {
+  0% {
+    background-size: 110%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
 
 /*# sourceMappingURL=home-banner.css.map */
