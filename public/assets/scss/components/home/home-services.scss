@@ -23,6 +23,11 @@
                 background: $primary-color;
                 transform: translateY(0) !important;
             }
+            .service-card__image {
+                img {
+                    transform: scale(1.1);
+                }
+            }
         }
         &__contents {
             position: absolute;
@@ -37,11 +42,6 @@
             max-width: 500px;
             overflow: hidden;
             @include aspect-ratio(300, 500);
-            &:hover {
-                img {
-                    transform: scale(1.1);
-                }
-            }
             img {
                 transition: 0.5s ease-out all;
             }

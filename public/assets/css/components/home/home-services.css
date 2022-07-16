@@ -37,6 +37,9 @@
   background: #ff5e14;
   transform: translateY(0) !important;
 }
+.home-services .service-card:hover .service-card__image img {
+  transform: scale(1.1);
+}
 .home-services .service-card__contents {
   position: absolute;
   bottom: 0;
@@ -59,9 +62,6 @@
   height: 100%;
   object-fit: cover;
   top: 0;
-}
-.home-services .service-card__image:hover img {
-  transform: scale(1.1);
 }
 .home-services .service-card__image img {
   transition: 0.5s ease-out all;

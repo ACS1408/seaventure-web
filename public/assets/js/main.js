@@ -4,9 +4,13 @@ window.addEventListener('scroll', (e) => {
 })
 
 const serviceCard = document.querySelectorAll('.service-card');
-serviceCard.forEach((card) => {
-    const cardHeight = card.offsetHeight;
-    const titleHeight = card.querySelector('.service-card__title').offsetHeight;
-    const cardOffset = cardHeight - titleHeight - 33;
-    card.querySelector('.service-card__contents').style.transform = `translateY(${cardOffset}px)`;
-})
+const serviceCardOffset = () => {
+    serviceCard.forEach((card) => {
+        const cardHeight = card.offsetHeight;
+        const titleHeight = card.querySelector('.service-card__title').offsetHeight;
+        const cardOffset = cardHeight - titleHeight - 33;
+        card.querySelector('.service-card__contents').style.transform = `translateY(${cardOffset}px)`;
+    })
+}
+serviceCardOffset();
+window.addEventListener('resize', () => serviceCardOffset())
