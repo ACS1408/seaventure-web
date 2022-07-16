@@ -1,8 +1,8 @@
 .home-banner {
-  background-size: 110%;
+  background-size: 120%;
   background-position: center 20%;
   padding-top: 85px;
-  animation: bannerScale 2s ease-out 1 forwards;
+  animation: bannerScale 3s ease-out 1 forwards;
 }
 .home-banner::before {
   content: "";
@@ -40,7 +40,7 @@
 
 @keyframes bannerScale {
   0% {
-    background-size: 110%;
+    background-size: 120%;
   }
   100% {
     background-size: 100%;
