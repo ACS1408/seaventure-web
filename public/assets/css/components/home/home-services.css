@@ -3,7 +3,7 @@
   font-weight: 500;
   line-height: 1;
   color: #ff5e14;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .home-services__title {
@@ -11,7 +11,7 @@
   font-weight: 600;
   color: #000000;
   max-width: 500px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .home-services__description {
@@ -24,6 +24,9 @@
 
 .home-services {
   padding: 80px 0;
+}
+.home-services__subtitle {
+  padding-top: 23px;
 }
 .home-services .service-card {
   margin-bottom: 30px;
