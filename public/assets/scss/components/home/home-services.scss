@@ -5,7 +5,7 @@
 .home-services {
     padding: 80px 0;
     @include max(767.98) {
-        padding: 40px 0;
+        padding: 40px 0 30px;
     }
     &__subtitle {
         padding-top: 23px;
@@ -17,7 +17,7 @@
     }
     &__title {
         @extend %section-title;
-        @include max(767.98) {
+        @include max(991.98) {
             text-align: center;
         }
     }
@@ -43,7 +43,7 @@
         }
         &:hover {
             .service-card__contents {
-                background: $primary-color;
+                background: rgba($primary-color, 0.8);
                 transform: translateY(0) !important;
             }
             .service-card__image {
@@ -92,7 +92,7 @@
             line-height: 19px;
             color: $white;
             margin-bottom: 0;
-            @include line-clamp(11);
+            @include line-clamp(9);
         }
     }
 }

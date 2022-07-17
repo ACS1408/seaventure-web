@@ -9754,6 +9754,11 @@ a {
   color: inherit;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #ff5e14 rgba(0, 0, 0, 0.3);
+}
+
 @media screen and (min-width: 1600px) {
   .container {
     max-width: 1540px;
@@ -9772,6 +9777,19 @@ a {
 .btn-primary {
   background-color: #ff5e14;
   border-color: #ff5e14;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff5e14;
+  border-radius: 22px;
 }
 
 .main-header {
@@ -9950,65 +9968,142 @@ a {
 }
 .footer {
   background: #141415;
+  overflow: hidden;
 }
 .footer-logo {
   filter: invert(1);
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .footer-logo {
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 50px;
   }
 }
 .footer-top {
-  padding: 30px 0 10px;
+  padding: 50px 0 40px;
   border-bottom: 1px solid rgba(237, 237, 237, 0.2);
+}
+@media screen and (max-width: 767.98px) {
+  .footer-top {
+    padding: 40px 0 10px;
+  }
 }
 .footer-top__wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 991.98px) {
   .footer-top__wrap {
     flex-direction: column;
     margin-bottom: 15px;
   }
 }
+.footer-top .links-col {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -40px;
+}
+@media screen and (max-width: 767.98px) {
+  .footer-top .links-col {
+    margin: 0 -15px;
+  }
+}
 .footer-top .links-col .page-links {
-  padding-left: 0;
+  padding: 0 40px;
   margin-bottom: 0;
   list-style: none;
   text-align: right;
 }
+@media screen and (max-width: 991.98px) {
+  .footer-top .links-col .page-links {
+    margin-bottom: 20px;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .footer-top .links-col .page-links {
-    text-align: center;
+    padding: 0 15px;
+  }
+  .footer-top .links-col .page-links:nth-child(1) {
+    order: 1;
+  }
+  .footer-top .links-col .page-links:nth-child(2) {
+    order: 3;
+    margin-bottom: 0;
   }
 }
-.footer-top .links-col .page-links li {
-  display: inline-block;
-  padding: 0 15px;
-}
-@media screen and (min-width: 768px) {
-  .footer-top .links-col .page-links li:first-child {
-    padding-left: 0;
-  }
-  .footer-top .links-col .page-links li:last-child {
-    padding-right: 0;
+@media screen and (max-width: 767.98px) and (max-width: 575.98px) {
+  .footer-top .links-col .page-links:nth-child(2) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
-.footer-top .links-col .page-links li.active a {
-  color: #ff5e14;
+@media screen and (max-width: 767.98px) {
+  .footer-top .links-col .page-links:nth-child(3) {
+    order: 4;
+    margin-bottom: 0;
+  }
 }
-.footer-top .links-col .page-links li a {
+@media screen and (max-width: 767.98px) and (max-width: 575.98px) {
+  .footer-top .links-col .page-links:nth-child(3) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .footer-top .links-col .page-links:nth-child(4) {
+    order: 2;
+  }
+}
+.footer-top .links-col .page-links dt {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 767.98px) {
+  .footer-top .links-col .page-links dt {
+    font-size: 1rem;
+  }
+}
+.footer-top .links-col .page-links dd {
+  text-align: left;
+}
+.footer-top .links-col .page-links dd a {
   font-size: 0.9375rem;
   font-weight: 400;
   text-decoration: none;
   color: #ffffff;
   transition: 0.3s ease color;
 }
-.footer-top .links-col .page-links li a:hover {
+@media screen and (max-width: 767.98px) {
+  .footer-top .links-col .page-links dd a {
+    font-size: 0.875rem;
+  }
+}
+.footer-top .links-col .page-links dd a:hover {
+  color: #ff5e14;
+}
+.footer-top .links-col .page-links dd address {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s ease color;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 767.98px) {
+  .footer-top .links-col .page-links dd address {
+    font-size: 0.875rem;
+  }
+}
+.footer-top .links-col .page-links dd address::last-child {
+  margin-bottom: 0;
+}
+.footer-top .links-col .page-links dd.active a {
   color: #ff5e14;
 }
 .footer-bottom {
@@ -10033,7 +10128,6 @@ a {
 @media screen and (max-width: 767.98px) {
   .footer-bottom .copyrights {
     text-align: center;
-    font-size: 0.8125rem;
   }
 }
 .footer-bottom .policy-links {
