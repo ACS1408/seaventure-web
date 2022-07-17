@@ -1,6 +1,9 @@
 html {
-    scrollbar-width: thin;
-    scrollbar-color: $primary-color rgba(0, 0, 0, 0.3);
+    scrollbar-width: none;
+    &.page-loaded {
+        scrollbar-width: thin;
+        scrollbar-color: $primary-color rgba(0, 0, 0, 0.3);
+    }
 }
 
 .container {
@@ -22,16 +25,20 @@ html {
         border-color: $primary-color;
     }
 }
-
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 0;
 }
-
-::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: $primary-color;
-    border-radius: 22px;
+.page-loaded {
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: $primary-color;
+        border-radius: 22px;
+    }
 }

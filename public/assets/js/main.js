@@ -1,3 +1,12 @@
+setTimeout(() => {
+    let stateCheck = setInterval(() => {
+        if (document.readyState === 'complete') {
+          clearInterval(stateCheck);
+          document.querySelector('html').classList.add('page-loaded');
+        }
+    }, 100);
+}, 3000);
+
 window.addEventListener('scroll', (e) => {
     const scroll = this.scrollY;
     scroll >= 100 ? document.body.classList.add('slim-header') : document.body.classList.remove('slim-header');
