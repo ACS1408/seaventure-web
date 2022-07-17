@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/assets/css/components/common.css">
     <!-- component stylesheets -->
     <link rel="stylesheet" href="/assets/css/components/home/home-banner.css">
+    <link rel="stylesheet" href="/assets/css/components/home/home-about.css">
     <link rel="stylesheet" href="/assets/css/components/home/home-services.css">
     
     <title>Seaventure | Home</title>
@@ -25,6 +26,7 @@
 <body>
     <%- include('partials/header') %>
     <main class="homepage">
+        <!-- Section: Home Banner -->
         <section class="home-banner" style="background-image: url('/assets/images/home/compressed/home-banner.jpg')">
             <div class="container">
                 <div class="home-banner__contents">
@@ -36,6 +38,29 @@
                 </div>
             </div>
         </section>
+
+        <!-- Section: About Us -->
+        <section class="home-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 image-col">
+                        <figure class="home-about__image">
+                            <img src="/assets/images/home/compressed/warehouse-workers.jpg" alt="warehouse-workers">
+                        </figure>
+                    </div>
+                    <div class="col-lg-8 content-col">
+                        <h2 class="home-about__subtitle">Who we are</h2>
+                        <h3 class="home-about__title">About Us</h2>
+                        <div class="home-about__description">
+                            <p>A company conceived from curiosity for maritime, that  has evolved into strong passion for Shipping, logistics and  supply chain solutions offering the highest level of  professional services backed by years of experience at a  realistic core.</p>
+                            <p>The foundation of the business consists of services such  as international freight (Air, Ocean, Land) customs  clearance, transportation and covers all logistics  demands. These services can act as standalone products  or as part of our broader offering as a supply chain  provider.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section: Our Services -->
         <section class="home-services">
             <div class="container">
                 <div class="row">

@@ -12,11 +12,9 @@
     font-size: size(32);
     font-weight: $font-semibold;
     color: $black;
-    max-width: 500px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     @include max(991.98) {
         font-size: size(26);
-        max-width: 320px;
         margin: 0 auto;
         margin-bottom: 8px;
     }
@@ -25,11 +23,9 @@
     font-size: size(16);
     font-weight: $font-regular;
     color: $black;
-    max-width: 500px;
     margin-bottom: 40px;
     @include max(991.98) {
         font-size: size(14);
-        max-width: 320px;
         margin: 0 auto;
         margin-bottom: 25px;
     }

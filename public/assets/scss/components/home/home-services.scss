@@ -17,14 +17,18 @@
     }
     &__title {
         @extend %section-title;
+        max-width: 500px;
         @include max(991.98) {
             text-align: center;
+            max-width: 350px;
         }
     }
     &__description {
         @extend %section-description;
+        max-width: 500px;
         @include max(991.98) {
             text-align: center;
+            max-width: 350px;
         }
     }
     .service-head {
