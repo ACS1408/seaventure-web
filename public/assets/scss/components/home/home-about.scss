@@ -32,8 +32,14 @@
     }
     &__description {
         @extend %section-description;
+        margin-bottom: 0;
         @include max(991.98) {
             text-align: center;
+        }
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
     &__image {
