@@ -13,4 +13,13 @@ const serviceCardOffset = () => {
     })
 }
 serviceCardOffset();
-window.addEventListener('resize', () => serviceCardOffset())
+window.addEventListener('resize', () => serviceCardOffset());
+
+const hamburgerBtn = document.querySelector('.hamburger');
+hamburgerBtn.addEventListener('click', () => {
+    document.body.classList.add('menu-open');
+});
+const closeHamBtn = document.querySelector('.close-menu-btn');
+closeHamBtn.addEventListener('click', () => {
+    document.body.classList.remove('menu-open');
+})

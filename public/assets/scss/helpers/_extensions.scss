@@ -4,6 +4,9 @@
     line-height: 1;
     color: $primary-color;
     margin-bottom: 8px;
+    @include max(767.98) {
+        font-size: size(14);
+    }
 }
 %section-title {
     font-size: size(32);
@@ -11,6 +14,12 @@
     color: $black;
     max-width: 500px;
     margin-bottom: 12px;
+    @include max(767.98) {
+        font-size: size(26);
+        max-width: 320px;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
 }
 %section-description {
     font-size: size(16);
@@ -18,4 +27,10 @@
     color: $black;
     max-width: 500px;
     margin-bottom: 40px;
+    @include max(767.98) {
+        font-size: size(14);
+        max-width: 320px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
 }

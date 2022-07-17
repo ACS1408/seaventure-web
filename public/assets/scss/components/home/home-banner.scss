@@ -2,10 +2,12 @@
 @import '../../helpers/variables';
 
 .home-banner {
-    background-size: 120%;
+    position: relative;
+    background-size: cover;
     background-position: center 20%;
+    background-repeat: no-repeat;
     padding-top: 85px;
-    animation: bannerScale 3s ease-out 1 forwards;
+    // animation: bannerScale 2s ease-out 1 forwards;
     &::before {
         content: "";
         width: 100%;
@@ -19,10 +21,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: calc(100vh - 85px);
         max-width: 540px;
+        height: min(calc(100vh - 85px), 768px);
         z-index: 2;
         position: relative;
+        @include max(767.98) {
+            justify-content: flex-end;
+        }
     }
     &__title {
         font-size: size(68);
@@ -31,6 +36,20 @@
         color: $white;
         margin-bottom: 15px;
         max-width: 500px;
+        @include max(991.98) {
+            font-size: size(48);
+            max-width: 380px;
+        }
+        @include max(767.98) {
+            font-size: size(40);
+            text-align: center;
+            max-width: 320px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        @include max(575.98) {
+            font-size: size(32);
+        }
     }
     &__description {
         font-size: size(16);
@@ -38,14 +57,29 @@
         line-height: 1.7;
         color: $white;
         margin-bottom: 35px;
+        @include max(991.98) {
+            max-width: 400px;
+            line-height: 1.5;
+        }
+        @include max(767.98) {
+            font-size: size(14);
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 35px;
+        }
+    }
+    .btn-wrap {
+        @include max(767.98) {
+            display: none;
+        }
     }
 }
 
-@keyframes bannerScale {
-    0% {
-        background-size: 120%;
-    }
-    100% {
-        background-size: 100%;
-    }
-}
+// @keyframes bannerScale {
+//     0% {
+//         background-size: 120%;
+//     }
+//     100% {
+//         background-size: 100%;
+//     }
+// }
