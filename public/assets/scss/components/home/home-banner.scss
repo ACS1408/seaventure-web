@@ -25,8 +25,11 @@
         height: min(calc(100vh - 85px), 768px);
         z-index: 2;
         position: relative;
-        @include max(767.98) {
+        @include max(991.98) {
             justify-content: flex-end;
+            max-width: 576px;
+            margin: 0 auto;
+            text-align: center;
         }
     }
     &__title {
@@ -38,17 +41,18 @@
         max-width: 500px;
         @include max(991.98) {
             font-size: size(48);
-            max-width: 380px;
-        }
-        @include max(767.98) {
-            font-size: size(40);
             text-align: center;
-            max-width: 320px;
+            max-width: 500px;
             margin: 0 auto;
             margin-bottom: 15px;
         }
+        @include max(767.98) {
+            font-size: size(40);
+            max-width: 375px;
+        }
         @include max(575.98) {
             font-size: size(32);
+            max-width: 320px;
         }
     }
     &__description {
@@ -58,20 +62,26 @@
         color: $white;
         margin-bottom: 35px;
         @include max(991.98) {
-            max-width: 400px;
+            max-width: 100%;
             line-height: 1.5;
+            margin: 0 auto;
+            margin-bottom: 60px;
         }
         @include max(767.98) {
             font-size: size(14);
             text-align: center;
-            margin: 0 auto;
-            margin-bottom: 35px;
         }
     }
     .btn-wrap {
-        @include max(767.98) {
+        @include max(991.98) {
             display: none;
         }
+    }
+}
+
+.android {
+    .home-banner__contents {
+        height: calc(100vh - 140px);
     }
 }
 

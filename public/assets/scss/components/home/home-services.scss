@@ -9,7 +9,7 @@
     }
     &__subtitle {
         padding-top: 23px;
-        @include max(767.98) {
+        @include max(991.98) {
             padding-top: 0;
             text-align: center;
         }
@@ -23,8 +23,15 @@
     }
     &__description {
         @extend %section-description;
-        @include max(767.98) {
+        @include max(991.98) {
             text-align: center;
+        }
+    }
+    .service-head {
+        @include min(991.98) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
     .service-card {
@@ -57,10 +64,7 @@
         &__image {
             max-width: 500px;
             overflow: hidden;
-            @include aspect-ratio(400, 500);
-            @include max(575.98) {
-                @include aspect-ratio(300, 500);
-            }
+            @include aspect-ratio(350, 500);
             img {
                 transition: 0.5s ease-out all;
             }

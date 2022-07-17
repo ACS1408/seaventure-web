@@ -22,4 +22,10 @@ hamburgerBtn.addEventListener('click', () => {
 const closeHamBtn = document.querySelector('.close-menu-btn');
 closeHamBtn.addEventListener('click', () => {
     document.body.classList.remove('menu-open');
-})
+});
+
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1;
+if(isAndroid) {
+    document.body.classList.add('android');
+}
