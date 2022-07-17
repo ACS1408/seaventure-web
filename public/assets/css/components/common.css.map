@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"common.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/components/common.scss"],"names":[],"mappings":"AAAA,WACI,eACA,QACA,aACA,gBACA,aACA,uBACA,mBACA,oCAGA,wBACI","file":"common.css"}
