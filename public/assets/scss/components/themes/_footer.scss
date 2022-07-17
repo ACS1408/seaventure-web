@@ -25,12 +25,12 @@
         .links-col {
             display: flex;
             flex-wrap: wrap;
-            margin: 0 -40px;
+            margin: 0 -30px;
             @include max(767.98) {
                 margin: 0 -15px;
             }
             .page-links {
-                padding: 0 40px;
+                padding: 0 30px;
                 margin-bottom: 0;
                 list-style: none;
                 text-align: right;
@@ -116,6 +116,9 @@
     &-bottom {
         padding: 15px 0;
         background: $dark-alt;
+        @include max(767.98) {
+            padding: 15px 0 25px;
+        }
         .container {
             display: flex;
             justify-content: space-between;
