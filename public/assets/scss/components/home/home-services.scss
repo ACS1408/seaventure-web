@@ -96,22 +96,22 @@
             line-height: 19px;
             color: $white;
             margin-bottom: 0;
-            // @include line-clamp(10);
-            // @include max(1399.98) {
-            //     @include line-clamp(9);
-            // }
-            // @include max(1199.98) {
-            //     @include line-clamp(6);
-            // }
-            // @include max(991.98) {
-            //     @include line-clamp(7);
-            // }
-            // @include max(767.98) {
-            //     @include line-clamp(4);
-            // }
-            // @include max(575.98) {
-            //     @include line-clamp(8);
-            // }
+            @include line-clamp(10);
+            @include max(1399.98) {
+                @include line-clamp(9);
+            }
+            @include max(1199.98) {
+                @include line-clamp(6);
+            }
+            @include max(991.98) {
+                @include line-clamp(7);
+            }
+            @include max(767.98) {
+                @include line-clamp(4);
+            }
+            @include max(575.98) {
+                @include line-clamp(8);
+            }
         }
     }
 }

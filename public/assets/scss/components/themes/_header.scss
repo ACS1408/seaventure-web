@@ -35,6 +35,9 @@
             height: 100vh;
             transform: translateX(100%);
             z-index: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             transition: 0.5s ease-out transform;
         }
         @include max(424.98) {
@@ -78,6 +81,42 @@
                     a {
                         color: $primary-color;
                         font-weight: $font-semibold;
+                    }
+                }
+            }
+        }
+    }
+    .socials {
+        &__list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            @include min(992) {
+                display: none;
+            }
+            li {
+                display: inline-block;
+                padding: 0 20px;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+                a {
+                    svg {
+                        transition: 0.3s ease all;
+                        path {
+                            transition: 0.3s ease all;
+                        }
+                    }
+                    &:hover {
+                        svg {
+                            transform: translateY(-2px);
+                            path {
+                                fill: $primary-color;
+                            }
+                        }
                     }
                 }
             }
@@ -164,6 +203,12 @@
         @supports (-moz-appearance: none) {
             background: #000000;
         }
+    }
+}
+
+.android {
+    .main-nav {
+        padding-bottom: 70px;
     }
 }
 
