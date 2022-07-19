@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass --watch public/assets/scss:public/assets/css --style compressed"
+    "scss": "sass --watch public/assets/scss:public/assets/css --style compressed",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
