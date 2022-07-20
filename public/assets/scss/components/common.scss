@@ -13,3 +13,6 @@
         transform: translateY(-100%);
     }
 }
+html:not(.page-loaded) {
+    overflow: hidden;
+}

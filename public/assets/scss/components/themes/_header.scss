@@ -126,8 +126,17 @@
 
 @include max(991.98) {
     .menu-open {
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
         .main-nav {
+            overflow: auto;
             transform: translateX(0);
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
         }
         .menu-overlay {
             opacity: 1;
@@ -158,6 +167,7 @@
         position: absolute;
         top: 30px;
         right: 15px;
+        cursor: pointer;
         &:hover {
             span {
                 background: $primary-color;
