@@ -27,6 +27,7 @@
 <body>
     <%- include('partials/preloader') %>
     <%- include('partials/header') %>
+    <%- include('partials/popup') %>
     <main class="homepage">
         <!-- Section: Home Banner -->
         <section class="home-banner" style="background-image: url('/assets/images/home/compressed/home-banner.jpg')">
@@ -70,18 +71,18 @@
         <!-- Section: Our Services -->
         <section class="home-services">
             <div class="container">
+                <div class="service-head">
+                    <h2 class="home-services__subtitle">What we do</h2>
+                    <h3 class="home-services__title">Our Services</h2>
+                    <p class="home-services__description">Aliqua sunt ad anim exercitation irure pariatur sint id cupidatat quis consequat officia.</p>
+                </div>
                 <div class="row">
-                    <div class="col-lg-4 service-head">
-                        <h2 class="home-services__subtitle">What we do</h2>
-                        <h3 class="home-services__title">Our Services</h2>
-                        <p class="home-services__description">Aliqua sunt ad anim exercitation irure pariatur sint id cupidatat quis consequat officia.</p>
-                    </div>
                     <div class="col-lg-4 col-sm-6">
-                        <article class="service-card">
+                        <article class="service-card" id="service-sea">
                             <figure class="service-card__image">
                                 <img src="/assets/images/home/compressed/sea-freight.jpg" alt="cargo-ship">
                             </figure>
-                            <div class="service-card__contents">
+                            <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
                                     <h3 class="service-card__title">Sea Freight</h3>
                                     <p class="service-card__description">By leveraging our global network and long-standing carrier
@@ -99,11 +100,11 @@
                         </article>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <article class="service-card">
+                        <article class="service-card" id="service-air">
                             <figure class="service-card__image">
                                 <img src="/assets/images/home/compressed/air-freight.jpg" alt="">
                             </figure>
-                            <div class="service-card__contents">
+                            <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
                                     <h3 class="service-card__title">Air Freight</h3>
                                     <p class="service-card__description">Vital and valuable goods are often subject to extreme time
@@ -117,11 +118,11 @@
                         </article>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <article class="service-card">
+                        <article class="service-card" id="service-road">
                             <figure class="service-card__image">
                                 <img src="/assets/images/home/compressed/road-freight.jpg" alt="">
                             </figure>
-                            <div class="service-card__contents">
+                            <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
                                     <h3 class="service-card__title">Road Freight</h3>
                                     <p class="service-card__description">Whether direct transport (FCL/FTL) or groupage (LCL/LTL) -
@@ -136,11 +137,11 @@
                         </article>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <article class="service-card">
+                        <article class="service-card" id="service-customs">
                             <figure class="service-card__image">
                                 <img src="/assets/images/home/compressed/customs-clearance.jpg" alt="">
                             </figure>
-                            <div class="service-card__contents">
+                            <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
                                     <h3 class="service-card__title">Customs Clearance</h3>
                                     <p class="service-card__description">Seaventure is widely recognized as
@@ -158,11 +159,11 @@
                         </article>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <article class="service-card">
+                        <article class="service-card" id="service-warehousing">
                             <figure class="service-card__image">
                                 <img src="/assets/images/home/compressed/warehousing.jpg" alt="">
                             </figure>
-                            <div class="service-card__contents">
+                            <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
                                     <h3 class="service-card__title">Warehousing and Contract Logistics</h3>
                                     <p class="service-card__description">Whether you’re building a comprehensive international
@@ -176,12 +177,12 @@
                             </div>
                         </article>
                     </div>
-                    <!-- <div class="col-lg-4 col-sm-6">
-                        <article class="service-card">
+                    <div class="col-lg-4 col-sm-6">
+                        <article class="service-card" id="service-sea">
                             <figure class="service-card__image">
                                 <img src="/assets/images/home/compressed/warehousing.jpg" alt="">
                             </figure>
-                            <div class="service-card__contents">
+                            <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
                                     <h3 class="service-card__title">Cargo Insurance</h3>
                                     <p class="service-card__description">
@@ -193,7 +194,7 @@
                                 </div>
                             </div>
                         </article>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </section>

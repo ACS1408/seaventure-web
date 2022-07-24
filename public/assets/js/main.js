@@ -40,3 +40,13 @@ var isAndroid = ua.indexOf("android") > -1;
 if(isAndroid) {
     document.body.classList.add('android');
 }
+
+const serviceModal = document.querySelector('.service-modal');
+serviceCard.forEach((card, index) => {
+    card.addEventListener('click', () => {
+        let serviceTitle = card.querySelector('.service-card__title').innerText;
+        let serviceContent = card.querySelector('.service-card__description').innerText;
+        serviceModal.querySelector('.modal-title').innerText = serviceTitle;
+        serviceModal.querySelector('.modal-body').innerText = serviceContent;
+    })
+})

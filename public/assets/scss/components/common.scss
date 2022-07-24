@@ -16,3 +16,24 @@
 html:not(.page-loaded) {
     overflow: hidden;
 }
+
+.modal {
+    &-header {
+        border-bottom: none;
+        padding: 30px;
+        padding-bottom: 0;
+        .btn-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+        }
+    }
+    &-body {
+        padding: 20px 30px 30px;
+    }
+}
