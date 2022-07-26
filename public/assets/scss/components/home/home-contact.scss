@@ -62,6 +62,8 @@
 
     }
     &__form {
+        max-width: 450px;
+        margin-left: auto;
         @include max(991.98) {
             margin-top: 30px;
         }

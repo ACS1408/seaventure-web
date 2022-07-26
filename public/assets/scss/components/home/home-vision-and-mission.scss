@@ -17,6 +17,11 @@
     &__description {
         @extend %section-description;
         margin-bottom: 0;
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
     &__card {
         max-width: 500px;
