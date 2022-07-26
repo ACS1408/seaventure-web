@@ -49,4 +49,25 @@ serviceCard.forEach((card, index) => {
         serviceModal.querySelector('.modal-title').innerText = serviceTitle;
         serviceModal.querySelector('.modal-body').innerText = serviceContent;
     })
+});
+
+const contactInput = document.querySelectorAll('.home-contact__form input');
+const contactTextarea = document.querySelectorAll('.home-contact__form textarea');
+
+contactInput.forEach(input => {
+    input.addEventListener('focus', (e) => {
+        e.target.parentElement.classList.add('focused');
+    })
+    input.addEventListener('blur', (e) => {
+        e.target.value == "" && e.target.parentElement.classList.remove('focused');
+    })
+});
+
+contactTextarea.forEach(input => {
+    input.addEventListener('focus', (e) => {
+        e.target.parentElement.classList.add('focused');
+    })
+    input.addEventListener('blur', (e) => {
+        e.target.value == "" && e.target.parentElement.classList.remove('focused');
+    })
 })

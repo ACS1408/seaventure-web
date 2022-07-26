@@ -43,10 +43,10 @@
     &__image {
         @include aspect-ratio(300, 280);
         @include max(991.98) {
-            @include aspect-ratio(250, 250);
+            @include aspect-ratio(200, 300);
         }
         img {
-            object-position: 0 30%;
+            object-position: 0 25%;
         }
     }
     .content-col {
