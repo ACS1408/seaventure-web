@@ -1,0 +1,26 @@
+@import '../../helpers/mixins';
+@import '../../helpers/variables';
+@import '../../helpers/extensions';
+
+.home-vision-and-mission {
+    padding: 100px 0;
+    background: #001631;
+    &__subtitle {
+        padding-top: 23px;
+        @include max(991.98) {
+            padding-top: 0;
+        }
+        @extend %section-subtitle;
+    }
+    &__title {
+        @extend %section-title;
+    }
+    &__description {
+        @extend %section-description;
+        margin-bottom: 0;
+    }
+    &__card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
