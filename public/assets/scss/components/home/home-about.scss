@@ -18,11 +18,12 @@
         }
     }
     &__subtitle {
+        @extend %section-subtitle;
+        @extend %title-line;
         @include max(991.98) {
             padding-top: 0;
             text-align: center;
         }
-        @extend %section-subtitle;
     }
     &__title {
         @extend %section-title;

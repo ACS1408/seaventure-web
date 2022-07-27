@@ -16,7 +16,7 @@
     @include max(991.98) {
         font-size: size(26);
         margin: 0 auto;
-        margin-bottom: 8px;
+        margin-bottom: 15px;
     }
 }
 %section-description {
@@ -28,5 +28,24 @@
         font-size: size(14);
         margin: 0 auto;
         margin-bottom: 25px;
+    }
+}
+%title-line {
+    position: relative;
+    @include min(992) {
+        width: max-content;
+    }
+    &::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background: $primary-color;
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        transform: translate(100%, -50%);
+        @include max(991.98) {
+            display: none;
+        }
     }
 }

@@ -10,9 +10,18 @@
     }
     &__subtitle {
         @extend %section-subtitle;
+        @extend %title-line;
+        width: max-content;
+        &::after {
+            display: block;
+        }
     }
     &__title {
         @extend %section-title;
+        @include max(575.98) {
+            max-width: 275px;
+            margin-left: 0;
+        }
     }
     &__description {
         @extend %section-description;
@@ -20,6 +29,24 @@
         p {
             &:last-child {
                 margin-bottom: 0;
+            }
+        }
+    }
+    &__list {
+        list-style: none;
+        @extend %section-description;
+        li {
+            position: relative;
+            &::before {
+                content: "";
+                width: 5px;
+                height: 15px;
+                border-radius: 5px;
+                background-color: $primary-color;
+                transform: skew(-25deg);
+                position: absolute;
+                top: 5px;
+                left: -20px;
             }
         }
     }

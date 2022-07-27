@@ -11,10 +11,10 @@
     &__subtitle {
         padding-top: 23px;
         text-align: center;
+        @extend %section-subtitle;
         @include max(991.98) {
             padding-top: 0;
         }
-        @extend %section-subtitle;
     }
     &__title {
         @extend %section-title;
@@ -71,6 +71,9 @@
             max-width: 500px;
             overflow: hidden;
             @include aspect-ratio(350, 500);
+            @include max(575.98) {
+                max-width: 100%;
+            }
             img {
                 transition: 0.5s ease-out all;
             }
