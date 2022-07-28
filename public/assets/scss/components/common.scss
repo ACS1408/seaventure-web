@@ -12,10 +12,18 @@
     justify-content: center;
     align-items: center;
     transition: 1s ease-in-out transform;
+    svg{
+        width: 240px;
+        height: 240px;  
+        transition: 0.3s ease all;
+    }
 }
 .page-loaded {
     .preloader {
         transform: translateY(-100%);
+        svg{
+            opacity: 0; 
+        }
     }
 }
 html:not(.page-loaded) {

@@ -65,7 +65,9 @@
         margin-bottom: 15px;
         &-title {
             @extend %section-subtitle;
+            font-size: size(17);
             color: black;
+            font-weight: $font-semibold;
             margin-bottom: 15px;
         }
         address {
@@ -252,5 +254,49 @@
    
     100% {
      transform: scale(1);
+    }
+}
+
+
+
+.home-contact {
+    .anim {
+        &.loadAnimX {
+            opacity: 0;
+            -webkit-transform: matrix(1,0,0,1,-30,0);
+            transform: matrix(1,0,0,1,-30,0);
+        }
+    }
+    h2, h3, h5, p, li,
+    figure, 
+    address,
+    .btn-wrap, 
+    .form-group, 
+    .terms-agreement {
+        animation-delay: 0s !important;
+    }
+}
+.page-loaded {
+    .home-contact {
+        .anim {
+            &.loadAnimX {
+                &.visible {
+                    animation: loadAnimX 0.8s cubic-bezier(.5,0,0,1) 1s 1 forwards
+                }
+            }
+        }
+    }
+}
+
+@keyframes loadAnimX {
+    0% {
+        opacity: 0;
+        -webkit-transform: matrix(1,0,0,1,-30,0);
+        transform: matrix(1,0,0,1,-30,0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: matrix(1,0,0,1,0,0);
+        transform: matrix(1,0,0,1,0,0);
     }
 }

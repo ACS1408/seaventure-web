@@ -1,3 +1,8 @@
+history.scrollRestoration = "manual";
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
 setTimeout(() => {
     let stateCheck = setInterval(() => {
         if (document.readyState === 'complete') {
@@ -71,3 +76,44 @@ contactTextarea.forEach(input => {
         e.target.value == "" && e.target.parentElement.classList.remove('focused');
     })
 })
+
+//animation
+// just "anim" in your element
+window.addEventListener("load", () => {
+    function isInViewport(el, gap) {
+        let top = el.offsetTop;
+        let left = el.offsetLeft;
+        let height = el.offsetHeight;
+        console.log(el.offsetParent);
+        while (el.offsetParent) {
+            el = el.offsetParent;
+            top += el.offsetTop;
+            left += el.offsetLeft;
+        }
+        return (
+            (window.pageYOffset + window.innerHeight - gap) >= (top) &&
+            (window.pageYOffset) <= (height + top)
+        );
+    }
+    let getElem = document.querySelectorAll('.anim');
+    //please change as per the design
+    const breakPoints = {
+        desktop: 80,
+        laptop: 80,
+        tab: 50,
+        mobile: 30
+    };
+    let targetGap;
+    window.innerWidth >= 1200 ? targetGap = breakPoints.desktop :
+        window.innerWidth >= 1024 ? targetGap = breakPoints.laptop :
+        window.innerWidth >= 768 ? targetGap = breakPoints.tab :
+        targetGap = breakPoints.mobile;
+
+    function anim() {
+        getElem.forEach(element => {
+            isInViewport(element, targetGap) ? element.classList.add("visible") : null;
+        })
+    }
+    getElem.length > 0 ? (window.addEventListener('scroll', anim, false)) : null;
+    getElem.length > 0 ? anim() : null;
+}, false);
