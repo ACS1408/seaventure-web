@@ -30,10 +30,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding-top: 85px;
-        @include max(991.98) {
-            padding-top: 0;
-        }
+        padding-top: 0;
     }
     .container {
         height: 100%;
@@ -46,6 +43,7 @@
         height: min(100vh, 768px);
         z-index: 2;
         position: relative;
+        padding-top: 85px;
         @include max(991.98) {
             justify-content: flex-end;
             max-width: 576px;
@@ -103,8 +101,8 @@
 }
 
 .android {
-    .home-banner__contents {
-        height: calc(100vh - 140px);
+    .home-banner__contents {      
+        height: min(100vh - 50px, 768px);
     }
 }
 
