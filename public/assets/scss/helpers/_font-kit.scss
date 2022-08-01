@@ -24,7 +24,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-  
+ 
 .icon-envelope:before {
   content: "\e900";
 }
@@ -42,6 +42,9 @@
 }
 .icon-phone:before {
   content: "\e942";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
 }
 .icon-facebook:before {
   content: "\ea90";

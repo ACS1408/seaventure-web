@@ -77,6 +77,28 @@ contactTextarea.forEach(input => {
     })
 })
 
+const serviceCardContent = document.querySelectorAll('.service-card__contents .content-wrap')
+
+const checkOverflow = (el) => {
+   var curOverflow = el.style.overflow;
+   if ( !curOverflow || curOverflow === "visible" )
+      el.style.overflow = "hidden";
+   var isOverflowing = el.clientWidth < el.scrollWidth 
+      || el.clientHeight < el.scrollHeight;
+   el.style.overflow = curOverflow;
+   isOverflowing ? el.classList.add('overflow-content') : el.classList.remove('overflow-content');
+}
+
+serviceCardContent.forEach(content => {
+    checkOverflow(content);
+})
+window.addEventListener('resize', () => {
+    serviceCardContent.forEach(content => {
+        checkOverflow(content);
+    })
+});
+
+
 //animation
 // just "anim" in your element
 window.addEventListener("load", () => {

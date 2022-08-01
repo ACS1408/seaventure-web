@@ -8,6 +8,9 @@
     background-repeat: no-repeat;
     overflow: hidden;
     height: min(100vh, 768px);
+    @include max(576, height) {
+        height: 576px;
+    }
     &::before {
         content: "";
         width: 100%;
@@ -21,6 +24,9 @@
     .video-wrap {
         @include aspect-ratio(9, 16);
         height: min(100vh, 768px);
+        @include max(576, height) {
+            height: 576px;
+        }
         video {
             @include min(1600) {
                 top: -100px;
@@ -44,6 +50,9 @@
         justify-content: center;
         max-width: 540px;
         height: min(100vh, 768px);
+        @include max(576, height) {
+            height: 576px;
+        }
         z-index: 2;
         position: relative;
         padding-top: 85px;

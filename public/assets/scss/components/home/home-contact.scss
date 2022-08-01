@@ -63,6 +63,11 @@
     }
     &__address {
         margin-bottom: 15px;
+        @include max(575.98) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+        }
         &-title {
             @extend %section-subtitle;
             font-size: size(17);
@@ -85,11 +90,18 @@
                 padding-left: 25px;
             }
         }
+        @include max(767.98) {
+            flex-wrap: wrap;
+        }
     }
     &__contact {
         padding-left: 0;
         list-style: none;
         margin-bottom: 0;
+        @include max(575.98) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
         li {
             display: flex;
             span {
@@ -113,12 +125,36 @@
                 color: $primary-color;
             }
         }
-
+    }
+    &__whatsapp {
+        margin-top: 25px;
+        @include min-max(576, 991.98) {
+            margin-top: 0;
+            padding-left: 25px;
+        }
+        @include max(767.98) {
+            padding-left: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            .btn {
+                width: 100%;
+            }
+        }
+        img {
+            width: 30px;
+            margin-right: 10px;
+        }
     }
     &__form {
         padding-top: 78px;
         max-width: 450px;
         margin-left: auto;
+        // form disabled styles--------
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // ----------------------------
         @include max(991.98) {
             max-width: 100%;
             padding-top: 30px;

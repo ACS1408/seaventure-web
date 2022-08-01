@@ -24,6 +24,9 @@ html {
         background-color: $primary-color;
         border-color: $primary-color;
     }
+    &-curved {
+        border-radius: 45px;
+    }
 }
 ::-webkit-scrollbar {
     width: 0;
