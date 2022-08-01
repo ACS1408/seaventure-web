@@ -56,7 +56,8 @@
 @mixin aspect-ratio($height, $width) {
     padding-top: calc((#{$height}/#{$width})*100%);
     position: relative;
-    img {
+    img,
+    video {
       position: absolute;
       left: 0;
       width: 100%;

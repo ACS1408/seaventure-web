@@ -104,18 +104,14 @@
                     padding-right: 0;
                 }
                 a {
-                    svg {
+                    i {
+                        color: #7b90aa;
                         transition: 0.3s ease all;
-                        path {
-                            transition: 0.3s ease all;
-                        }
                     }
                     &:hover {
-                        svg {
+                        i {
                             transform: translateY(-2px);
-                            path {
-                                fill: $primary-color;
-                            }
+                            color: $primary-color;
                         }
                     }
                 }

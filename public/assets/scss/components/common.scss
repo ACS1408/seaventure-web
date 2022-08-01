@@ -50,3 +50,7 @@ html:not(.page-loaded) {
         padding: 20px 30px 30px;
     }
 }
+
+section {
+    overflow-x: hidden;
+}

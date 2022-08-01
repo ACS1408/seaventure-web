@@ -34,30 +34,37 @@
     <%- include('partials/popup') %>
     <main class="homepage">
         <!-- Section: Home Banner -->
-        <section class="home-banner" style="background-image: url('/assets/images/home/compressed/home-banner.jpg')">
-            <div class="container">
-                <div class="home-banner__contents">
-                    <h1 class="home-banner__title anim loadAnimX">We Provide <br> The Boutique Solution <br> To Our Customers</h1>
-                    <p class="home-banner__description anim loadAnimX"> 
-                        Our years of experience in supply chain provides a pivotal
-                        logistics solution to all our customer needs, led by an
-                        experienced leadership group and a very versatile operation
-                        team.
-                    </p>
-                    <div class="btn-wrap anim loadAnimX">
-                        <a href="/about" class="btn btn-primary">About Us</a>
+        <section class="home-banner">
+        <!-- <section class="home-banner" style="background-image: url('/assets/images/home/compressed/home-banner.jpg')"> -->
+            
+            <div class="video-wrap">
+                <video src="/assets/videos/banner-video.mp4" playsinline autoplay muted loop></video>
+            </div>
+            <div class="content-wrap">
+                <div class="container">
+                    <div class="home-banner__contents">
+                        <h1 class="home-banner__title anim loadAnimX">We Provide <br> The Boutique Solution <br> To Our Customers</h1>
+                        <p class="home-banner__description anim loadAnimX"> 
+                            Our years of experience in supply chain provides a pivotal
+                            logistics solution to all our customer needs, led by an
+                            experienced leadership group and a very versatile operation
+                            team.
+                        </p>
+                        <div class="btn-wrap anim loadAnimX">
+                            <button class="btn btn-primary about-btn">About Us</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Section: About Us -->
-        <section class="home-about">
+        <section class="home-about" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 image-col">
                         <figure class="home-about__image anim loadAnimX">
-                            <img data-src="/assets/images/home/compressed/warehouse-workers.jpg" alt="warehouse-workers" data-lazy>
+                            <img src="/assets/images/home/compressed/warehouse-workers.jpg" alt="warehouse-workers" data-lazy>
                         </figure>
                     </div>
                     <div class="col-lg-8 content-col">
@@ -73,7 +80,7 @@
         </section>
         
         <!-- Section: Our Services -->
-        <section class="home-services">
+        <section class="home-services" id="services">
             <div class="container">
                 <div class="service-head">
                     <h2 class="home-services__subtitle anim loadAnimY">What we do</h2>
@@ -84,7 +91,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <article class="service-card anim loadAnimY" id="service-sea">
                             <figure class="service-card__image">
-                                <img data-src="/assets/images/home/compressed/sea-freight.jpg" alt="cargo-ship" data-lazy>
+                                <img src="/assets/images/home/compressed/sea-freight.jpg" alt="cargo-ship" data-lazy>
                             </figure>
                             <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
@@ -106,7 +113,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <article class="service-card anim loadAnimY" id="service-air">
                             <figure class="service-card__image">
-                                <img data-src="/assets/images/home/compressed/air-freight.jpg" alt="cargo-flight" data-lazy>
+                                <img src="/assets/images/home/compressed/air-freight.jpg" alt="cargo-flight" data-lazy>
                             </figure>
                             <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
@@ -124,7 +131,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <article class="service-card anim loadAnimY" id="service-road">
                             <figure class="service-card__image">
-                                <img data-src="/assets/images/home/compressed/road-freight.jpg" alt="cargo-trucks" data-lazy>
+                                <img src="/assets/images/home/compressed/road-freight.jpg" alt="cargo-trucks" data-lazy>
                             </figure>
                             <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
@@ -143,7 +150,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <article class="service-card anim loadAnimY" id="service-customs">
                             <figure class="service-card__image">
-                                <img data-src="/assets/images/home/compressed/customs-clearance.jpg" alt="customs-clearance-officer" data-lazy>
+                                <img src="/assets/images/home/compressed/customs-clearance.jpg" alt="customs-clearance-officer" data-lazy>
                             </figure>
                             <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
@@ -165,7 +172,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <article class="service-card anim loadAnimY" id="service-warehousing">
                             <figure class="service-card__image">
-                                <img data-src="/assets/images/home/compressed/warehousing.jpg" alt="warehouse" data-lazy>
+                                <img src="/assets/images/home/compressed/warehousing.jpg" alt="warehouse" data-lazy>
                             </figure>
                             <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
@@ -184,7 +191,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <article class="service-card anim loadAnimY" id="service-sea">
                             <figure class="service-card__image">
-                                <img data-src="/assets/images/home/compressed/insurance-papers.jpg" alt="insurance-papers" data-lazy>
+                                <img src="/assets/images/home/compressed/insurance-papers.jpg" alt="insurance-papers" data-lazy>
                             </figure>
                             <div class="service-card__contents" data-bs-toggle="modal" data-bs-target="#serviceModal">
                                 <div class="content-wrap">
@@ -236,7 +243,7 @@
                     </div>
                     <div class="col-lg-4 image-col">
                         <figure class="home-why-us__image anim loadAnimXopp">
-                            <img data-src="/assets/images/home/compressed/why-choose.jpg" alt="warehouse-workers" data-lazy>
+                            <img src="/assets/images/home/compressed/why-choose.jpg" alt="warehouse-workers" data-lazy>
                         </figure>
                     </div>
                 </div>
@@ -257,11 +264,11 @@
                         </ul>
                     </div>
                     <div class="col-lg-6 home-vision-and-mission__card">
-                        <h2 class="home-vision-and-mission__subtitle anim loadAnimX">Mission</h2>
-                        <h3 class="home-vision-and-mission__title text-white anim loadAnimX">Lorem Ipsum Sit Dolor Amet</h3>
+                        <h2 class="home-vision-and-mission__subtitle anim loadAnimX loadAnimXopp-sm">Mission</h2>
+                        <h3 class="home-vision-and-mission__title text-white anim loadAnimX loadAnimXopp-sm">Lorem Ipsum Sit Dolor Amet</h3>
                         <div class="home-vision-and-mission__description text-white">
-                            <p class="anim loadAnimX">Seaventure shipping services is dedicated to understanding our customer expectatons and identifying and developing oppurtunities that enhance customer supply chain strategies.</p>
-                            <p class="anim loadAnimX">Our operating philosophy is founded on maintaining the highest level of quality service in the most efficient manner possible. We are committed to continuous process improvement through leadership, innovation and technology.</p>
+                            <p class="anim loadAnimX loadAnimXopp-sm">Seaventure shipping services is dedicated to understanding our customer expectatons and identifying and developing oppurtunities that enhance customer supply chain strategies.</p>
+                            <p class="anim loadAnimX loadAnimXopp-sm">Our operating philosophy is founded on maintaining the highest level of quality service in the most efficient manner possible. We are committed to continuous process improvement through leadership, innovation and technology.</p>
                         </div>
                     </div>
                 </div>
@@ -269,7 +276,7 @@
         </section>
 
         <!-- Section: Contact -->
-        <section class="home-contact">
+        <section class="home-contact" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -277,25 +284,25 @@
                         <h3 class="home-contact__title anim loadAnimX">Get In Touch With Us</h3>
                         <div class="home-contact__description">
                             <figure class="home-contact__map anim loadAnimX">
-                                <a href="https://goo.gl/maps/zXTURPUp71QYacrM7" target="_blank" rel="noopener noreferrer"></a>
-                                <img data-src="/assets/images/home/compressed/company-image.jpg" alt="company-buildings" data-lazy>
+                                <a href="https://goo.gl/maps/LM2epSmjKXwv9xC78" target="_blank" rel="noopener noreferrer"></a>
+                                <img src="/assets/images/home/compressed/company-image.jpg" alt="company-buildings" data-lazy>
                                 <button class="map-open-btn">View Location</button>
                             </figure>
                         </div>
                         <div class="contact-wrap">
                             <div class="home-contact__address">
-                                <h5 class="home-contact__address-title anim loadAnimX">Company Address</h5>
-                                <address class="anim loadAnimX">226, Anchorage Building,</address>
-                                <address class="anim loadAnimX">Dubai South, United Arab Emirates</address>
+                                <h5 class="home-contact__address-title anim loadAnimX loadAnimXopp-sm">Company Address</h5>
+                                <address class="anim loadAnimX loadAnimXopp-sm">226, Anchorage Building,</address>
+                                <address class="anim loadAnimX loadAnimXopp-sm">Dubai South, United Arab Emirates</address>
                             </div>
                             <ul class="home-contact__contact">
-                                <li class="anim loadAnimX">
+                                <li class="anim loadAnimX loadAnimXopp-sm">
                                     <span>
                                         <i class="icon-envelope" style="font-size: 18px;"></i> 
                                     </span>
                                     <a href="tel:+97143887184">+971 4 388 7184</a>
                                 </li>
-                                <li class="anim loadAnimX">
+                                <li class="anim loadAnimX loadAnimXopp-sm">
                                     <span>
                                         <i class="icon-phone" style="font-size: 18px;"></i>
                                     </span>
@@ -346,11 +353,10 @@
         </section>
     </main>
     <%- include('partials/footer') %>
-    <!-- pagescript -->
-    <script></script>
+    <!-- pagescript -->    
     <!-- component script -->
-    <script src=""></script>
     <!-- main script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="/assets/js/main.js"></script>
