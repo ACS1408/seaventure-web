@@ -8,8 +8,6 @@
     background-repeat: no-repeat;
     overflow: hidden;
     height: min(100vh, 768px);
-    // padding-top: 85px;
-    // animation: bannerScale 2s ease-out 1 forwards;
     &::before {
         content: "";
         width: 100%;
@@ -23,6 +21,11 @@
     .video-wrap {
         @include aspect-ratio(9, 16);
         height: min(100vh, 768px);
+        video {
+            @include min(1600) {
+                top: -100px;
+            }
+        }
     }
     .content-wrap {
         position: absolute;
