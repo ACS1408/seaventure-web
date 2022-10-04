@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff5e14">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <!-- Fonts: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <!-- common stylesheet -->
+    <link rel="stylesheet" href="assets/css/components/common.css">
+    <!-- component stylesheets -->
+    <link rel="stylesheet" href="assets/css/components/home/home-banner.css">
+    <link rel="stylesheet" href="assets/css/components/home/home-about.css">
+    <link rel="stylesheet" href="assets/css/components/home/home-services.css">
+    <link rel="stylesheet" href="assets/css/components/home/home-why-us.css">
+    <link rel="stylesheet" href="assets/css/components/home/home-vision-and-mission.css">
+    <link rel="stylesheet" href="assets/css/components/home/home-contact.css">
+    
+    <title>Seaventure | Home</title>
+</head>
+<body>
+    <?php include('includes/preloader.php');?>
+    <?php include('includes/header.php');?>
+    <?php include('includes/popup.php');?>
+    <main class="homepage">
+        <!-- Section: Home Banner -->
+        <section class="home-banner">
+        <!-- <section class="home-banner" style="background-image: url('assets/images/home/compressed/home-banner.jpg')"> -->
+            
+            <div class="video-wrap">
+                <video src="assets/videos/banner-video.mp4" playsinline autoplay muted loop></video>
+            </div>
+            <div class="content-wrap">
+                <div class="container">
+                    <div class="home-banner__contents">
+                        <h1 class="home-banner__title anim loadAnimX"><span class="line"><span>We Provide</span></span> <br> <span class="line"><span>The Boutique Solution</span></span> <br> <span class="line"><span>To Our Customers</span></span></h1>
+                        <p class="home-banner__description anim loadAnimX"> 
+                            Our years of experience in supply chain provides a pivotal
+                            logistics solution to all our customer needs, led by an
+                            experienced leadership group and a very versatile operation
+                            team.
+                        </p>
+                        <div class="btn-wrap anim loadAnimX">
+                            <button class="btn btn-primary about-btn">About Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: About Us -->
+        <section class="home-about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 image-col">
+                        <figure class="home-about__image anim loadAnimX">
+                            <img src="assets/images/home/compressed/warehouse-workers.jpg" alt="warehouse-workers" data-lazy>
+                        </figure>
+                    </div>
+                    <div class="col-lg-8 content-col">
+                        <h2 class="home-about__subtitle anim loadAnimX">Who we are</h2>
+                        <h3 class="home-about__title anim loadAnimX">About Us</h2>
+                        <div class="home-about__description">
+                            <p class="anim loadAnimX">A company conceived from curiosity for maritime, that  has evolved into strong passion for Shipping, logistics and  supply chain solutions offering the highest level of  professional services backed by years of experience at a  realistic core.</p>
+                            <p class="anim loadAnimX">The foundation of the business consists of services such  as international freight (Air, Ocean, Land) customs  clearance, transportation and covers all logistics  demands. These services can act as standalone products  or as part of our broader offering as a supply chain  provider.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section: Our Services -->
+        <section class="home-services" id="services">
+            <div class="container">
+                <div class="service-head">
+                    <h2 class="home-services__subtitle anim loadAnimY">What we do</h2>
+                    <h3 class="home-services__title anim loadAnimY">Our Services</h2>
+                    <p class="home-services__description anim loadAnimY">Aliqua sunt ad anim exercitation irure pariatur sint id cupidatat quis consequat officia.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <article class="service-card anim loadAnimY" id="service-sea">
+                            <figure class="service-card__image">
+                                <img src="assets/images/home/compressed/sea-freight.jpg" alt="cargo-ship" data-lazy>
+                            </figure>
+                            <div class="service-card__contents">
+                                <div class="content-wrap">
+                                    <h3 class="service-card__title">Sea Freight</h3>
+                                    <p class="service-card__description">By leveraging our global network and long-standing carrier
+                                        relationships, Seaventure brings you flexible, reliable ocean
+                                        freight forwarding solutions built around operational
+                                        excellence. In order to offer the best service possible, we have
+                                        a dedicated Ocean Freight Department specializing in FCL,
+                                        LCL, Break-Bulk, Project Cargo and different types of cargoes
+                                        on a global scale. Our worldwide logistics services cover not
+                                        only shipments from port-to-port, but also the complete
+                                        door-to-door supply chain solution.
+                                    </p>
+                                </div>
+                                <div class="readmore" data-bs-toggle="modal" data-bs-target="#serviceModal">
+                                    Read more <i class="icon-arrow-right2" style="font-size: 13px;"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <article class="service-card anim loadAnimY" id="service-air">
+                            <figure class="service-card__image">
+                                <img src="assets/images/home/compressed/air-freight.jpg" alt="cargo-flight" data-lazy>
+                            </figure>
+                            <div class="service-card__contents">
+                                <div class="content-wrap">
+                                    <h3 class="service-card__title">Air Freight</h3>
+                                    <p class="service-card__description">Vital and valuable goods are often subject to extreme time
+                                        pressures and deadlines for everyone involved. Thanks to our
+                                        strategic alliances around the globe, you have the flexibility to
+                                        choose from a range of air freight service options tailored to
+                                        your precise needs, complete with end-to end visibility.
+                                    </p>
+                                </div>
+                                <div class="readmore" data-bs-toggle="modal" data-bs-target="#serviceModal">
+                                    Read more <i class="icon-arrow-right2" style="font-size: 13px;"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <article class="service-card anim loadAnimY" id="service-road">
+                            <figure class="service-card__image">
+                                <img src="assets/images/home/compressed/road-freight.jpg" alt="cargo-trucks" data-lazy>
+                            </figure>
+                            <div class="service-card__contents">
+                                <div class="content-wrap">
+                                    <h3 class="service-card__title">Road Freight</h3>
+                                    <p class="service-card__description">Whether direct transport (FCL/FTL) or groupage (LCL/LTL) -
+                                        thanks to innovative teams and excellent personnel, we can
+                                        offer you transport solutions that are tailored to your
+                                        requirements. Benefit from fast transit times, reliable
+                                        capacities, a wide range of products, andunrivaled service
+                                        quality.
+                                    </p>
+                                </div>
+                                <div class="readmore" data-bs-toggle="modal" data-bs-target="#serviceModal">
+                                    Read more <i class="icon-arrow-right2" style="font-size: 13px;"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <article class="service-card anim loadAnimY" id="service-customs">
+                            <figure class="service-card__image">
+                                <img src="assets/images/home/compressed/customs-clearance.jpg" alt="customs-clearance-officer" data-lazy>
+                            </figure>
+                            <div class="service-card__contents">
+                                <div class="content-wrap">
+                                    <h3 class="service-card__title">Customs Clearance</h3>
+                                    <p class="service-card__description">Seaventure is widely recognized as
+                                        one of the leading customs brokers, mainly in UAE. With our
+                                        long standing professional relationships with government
+                                        agencies and with this hard-earned relation we can assure
+                                        you the best and on time clearance service. Which also adds
+                                        distinct advantage when it comes to negotiating difficult
+                                        consignments and dealing with the challenges of
+                                        bureaucratic procedures. In short, our customer gets
+                                        Hassle-Free service.
+                                    </p>
+                                </div>
+                                <div class="readmore" data-bs-toggle="modal" data-bs-target="#serviceModal">
+                                    Read more <i class="icon-arrow-right2" style="font-size: 13px;"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <article class="service-card anim loadAnimY" id="service-warehousing">
+                            <figure class="service-card__image">
+                                <img src="assets/images/home/compressed/warehousing.jpg" alt="warehouse" data-lazy>
+                            </figure>
+                            <div class="service-card__contents">
+                                <div class="content-wrap">
+                                    <h3 class="service-card__title">Warehousing and Contract Logistics</h3>
+                                    <p class="service-card__description">Whether you’re building a comprehensive international
+                                        supply chain or just need to manage a seasonal inventory
+                                        upsurge, Seaventure can help. Our extensive warehousing
+                                        and distribution system will pick, pack, store and distribute
+                                        consignments anywhere in the region by efficient modes of
+                                        transport.
+                                    </p>
+                                </div>
+                                <div class="readmore" data-bs-toggle="modal" data-bs-target="#serviceModal">
+                                    Read more <i class="icon-arrow-right2" style="font-size: 13px;"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <article class="service-card anim loadAnimY" id="service-sea">
+                            <figure class="service-card__image">
+                                <img src="assets/images/home/compressed/insurance-papers.jpg" alt="insurance-papers" data-lazy>
+                            </figure>
+                            <div class="service-card__contents">
+                                <div class="content-wrap">
+                                    <h3 class="service-card__title">Cargo Insurance</h3>
+                                    <p class="service-card__description">
+                                        Even though your cargoes are in safe hands there’s chances  for unforeseen situations, our comprehensive cargo 
+                                        insurance  can cover such cases. Our service covers both onshore and  offshore property and loss or damage of cargo 
+                                        on all modes  of transportation, one of our professional risk management  tools. Insurance service type includes all 
+                                        cargoes ranging  from household goods, personal effects, live-stock, to  commercial goods.
+                                    </p>
+                                </div>
+                                <div class="readmore" data-bs-toggle="modal" data-bs-target="#serviceModal">
+                                    Read more <i class="icon-arrow-right2" style="font-size: 13px;"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section: Why Choose Us -->
+        <section class="home-why-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 content-col">
+                        <h2 class="home-why-us__subtitle anim loadAnimX">Why us</h2>
+                        <h3 class="home-why-us__title anim loadAnimX">Our Features</h3>
+                        <div class="home-about__description">
+                            <p class="anim loadAnimX">
+                                The core of our offering is our exclusive innovation—rapidly
+                                versatile, exceedingly adaptable, and particularly simple to
+                                use for customers, accomplices, and sellers.
+                            </p> 
+                            <p class="anim loadAnimX">
+                                We are presently connected with and utilize more than 150+
+                                logisticians and nearby business people, in an extending
+                                overall system of areas. Since we are promoted by private
+                                value, we’ve developed rapidly and are a non-resource-based
+                                association that shares a solitary vision.
+                            </p> 
+                            <p class="anim loadAnimX">
+                                <b>
+                                    At Seaventure, the client is our best need. We will likely give
+                                    you the best worldwide, yet neighborhood benefits around.
+                                    We need you to be cheerful. We need you to succeed.
+                                    Consequently, we cherish serving our clients and are
+                                    dependably... basically at your administration.
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 image-col">
+                        <figure class="home-why-us__image anim loadAnimXopp">
+                            <img src="assets/images/home/compressed/why-choose.jpg" alt="warehouse-workers" data-lazy>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Visin and Mission -->
+        <section class="home-vision-and-mission">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 home-vision-and-mission__card">
+                        <!-- <h2 class="home-vision-and-mission__subtitle anim loadAnimX">Vision</h2> -->
+                        <h3 class="home-vision-and-mission__title text-white anim loadAnimX">Vision</h3>
+                        <ul class="home-vision-and-mission__list text-white">
+                            <li class="anim loadAnimX">To emerge as the leader in logistics industry.</p>
+                            <li class="anim loadAnimX">To be the part of better tommorow, by connecting the world with savvy logistics solutions.</p>
+                            <li class="anim loadAnimX">To adapt to latest technologies which supports the growth of the company which enables to fulfill slient requirements.</p>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 home-vision-and-mission__card">
+                        <!-- <h2 class="home-vision-and-mission__subtitle anim loadAnimX loadAnimXopp-sm">Mission</h2> -->
+                        <h3 class="home-vision-and-mission__title text-white anim loadAnimX loadAnimXopp-sm">Mission</h3>
+                        <div class="home-vision-and-mission__description text-white">
+                            <p class="anim loadAnimX loadAnimXopp-sm">Seaventure shipping services is dedicated to understanding our customer expectatons and identifying and developing oppurtunities that enhance customer supply chain strategies.</p>
+                            <p class="anim loadAnimX loadAnimXopp-sm">Our operating philosophy is founded on maintaining the highest level of quality service in the most efficient manner possible. We are committed to continuous process improvement through leadership, innovation and technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Contact -->
+        <section class="home-contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2 class="home-contact__subtitle anim loadAnimX">Contact</h2>
+                        <h3 class="home-contact__title anim loadAnimX">Get In Touch With Us</h3>
+                        <div class="home-contact__description">
+                            <figure class="home-contact__map anim loadAnimX">
+                                <a href="https://goo.gl/maps/nkYLCMW24zaVGgsh7" target="_blank" rel="noopener noreferrer"></a>
+                                <img src="assets/images/home/compressed/company-image.jpg" alt="company-buildings" data-lazy>
+                                <button class="map-open-btn">View Location</button>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="home-contact__form">
+                            <div class="contact-wrap">
+                                <div class="home-contact__address">
+                                    <h5 class="home-contact__address-title anim loadAnimX loadAnimXopp-sm">Company Address</h5>
+                                    <address class="anim loadAnimX loadAnimXopp-sm">Seaventure Shipping Services,</address>
+                                    <address class="anim loadAnimX loadAnimXopp-sm">226, Anchorage Building,</address>
+                                    <address class="anim loadAnimX loadAnimXopp-sm">Dubai South, United Arab Emirates</address>
+                                </div>
+                                <ul class="home-contact__contact">
+                                    <li class="anim loadAnimX loadAnimXopp-sm">
+                                        <span>
+                                            <i class="icon-envelope" style="font-size: 18px;"></i> 
+                                        </span>
+                                        <a href="tel:+97143887184">+971 4 388 7184</a>
+                                    </li>
+                                    <li class="anim loadAnimX loadAnimXopp-sm">
+                                        <span>
+                                            <i class="icon-phone" style="font-size: 18px;"></i>
+                                        </span>
+                                        <span>
+                                            <a href="mailto:contact@seaventure.live">contact@seaventure.live</a>
+                                            <a href="mailto:manager@seaventure.live">manager@seaventure.live</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="home-contact__whatsapp">
+                                    <a href="https://wa.me/97143887184?text=Test" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-curved">
+                                        <img src="assets/icons/icon-whatsapp.svg" alt="">
+                                        <span>Whatsapp</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <form action="">
+                                <div class="form-group anim loadAnimX">
+                                    <input type="text" class="form-control contact-input" id="contact-full-name">
+                                    <label for="contact-full-name" class="contact-label">Full name</label>
+                                </div>
+                                <div class="form-group anim loadAnimX">
+                                    <input type="email" class="form-control contact-input" id="contact-email" inputmode="email">
+                                    <label for="contact-email" class="contact-label">Email</label>
+                                </div>
+                                <div class="form-group anim loadAnimX">
+                                    <input type="number" class="form-control contact-input" id="contact-phone" inputmode="numeric">
+                                    <label for="contact-phone" class="contact-label">Phone</label>
+                                </div>
+                                <div class="form-group textarea anim loadAnimX">
+                                    <textarea class="form-control contact-input" id="contact-message"></textarea>
+                                    <label for="contact-message" class="contact-label">Message</label>
+                                </div>
+                                <div class="terms-agreement anim loadAnimX">
+                                    <label class="terms-container">
+                                        <input id="terms-check" type="checkbox">
+                                        <div class="checkmark"></div>
+                                    </label>
+                                    <label for="terms-check" class="terms-label">
+                                        By submitting your information, you agree to our <a href="">T&C</a> and <a href="">Privacy Policy</a>.
+                                    </label>
+                                </div>
+                                <div class="btn-wrap anim loadAnimX">
+                                    <input type="submit" value="Submit" class="btn btn-primary">
+                                </div>
+                            </form> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <?php include('includes/footer.php');?>
+    <!-- pagescript -->    
+    <!-- component script -->
+    <!-- main script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

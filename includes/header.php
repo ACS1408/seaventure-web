@@ -1,0 +1,57 @@
+<header class="main-header">
+    <div class="container">
+        <a href="index.php">
+            <figure class="main-header__logo">
+                <img src="assets/images/seaventure-logo-lg.svg" alt="seaventures-logo" title="seaventure" />
+            </figure>
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="active">
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="#" data-section="about">About</a>
+                </li>
+                <li>
+                    <a href="#" data-section="services">Services</a>
+                </li>
+                <li>
+                    <a href="#" data-section="contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="socials__list">
+                <li>
+                    <a href="http://www.facebook.com/seaventure.live" target="_blank" rel="noopener noreferrer">
+                        <i class="icon-facebook" style="font-size: 18px;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/teamseaventure?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer">
+                        <i class="icon-instagram" style="font-size: 18px;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/company/seaventure" target="_blank" rel="noopener noreferrer">
+                        <i class="icon-linkedin2" style="font-size: 23px;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/97143887184?text=Test" target="_blank" rel="noopener noreferrer">
+                        <i class="icon-whatsapp" style="font-size: 18px;"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="close-menu-btn">
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="menu-overlay"></div>
+</header>
