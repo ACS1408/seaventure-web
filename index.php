@@ -27,6 +27,39 @@
     <link rel="stylesheet" href="assets/css/components/home/home-contact.css">
     
     <title>Seaventure | Home</title>
+    <style>
+        blockquote {
+	font-weight: 100;
+	font-size: 2rem;
+	max-width: 600px;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: .5rem;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: #ff5e14;
+	font-size: 5rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -3rem;
+	top: -1rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -3rem;
+	bottom: 0rem;
+}
+
+        </style>
 </head>
 <body>
     <?php include('includes/preloader.php');?>
@@ -276,9 +309,7 @@
                         <!-- <h2 class="home-vision-and-mission__subtitle anim loadAnimX">Vision</h2> -->
                         <h3 class="home-vision-and-mission__title text-white anim loadAnimX">Vision</h3>
                         <ul class="home-vision-and-mission__list text-white">
-                            <li class="anim loadAnimX">To emerge as the leader in logistics industry.</p>
-                            <li class="anim loadAnimX">To be the part of better tommorow, by connecting the world with savvy logistics solutions.</p>
-                            <li class="anim loadAnimX">To adapt to latest technologies which supports the growth of the company which enables to fulfill slient requirements.</p>
+                            <li class="anim loadAnimX vision-ui" style="font-size:25px"><blockquote> To be the part of better tommorow, by connecting the world with savvy logistics solutions.</blockquote>
                         </ul>
                     </div>
                     <div class="col-lg-6 home-vision-and-mission__card">
@@ -303,7 +334,7 @@
                         <div class="home-contact__description">
                             <figure class="home-contact__map anim loadAnimX">
                                 <a href="https://goo.gl/maps/nkYLCMW24zaVGgsh7" target="_blank" rel="noopener noreferrer"></a>
-                                <img src="assets/images/home/compressed/company-image.jpg" alt="company-buildings" data-lazy>
+                                <img src="assets/images/home/compressed/location.jpg" alt="company-buildings" data-lazy>
                                 <button class="map-open-btn">View Location</button>
                             </figure>
                         </div>
@@ -320,13 +351,14 @@
                                 <ul class="home-contact__contact">
                                     <li class="anim loadAnimX loadAnimXopp-sm">
                                         <span>
-                                            <i class="icon-envelope" style="font-size: 18px;"></i> 
+                                        <i class="icon-phone" style="font-size: 18px;"></i>
+
                                         </span>
                                         <a href="tel:+97143887184">+971 4 388 7184</a>
                                     </li>
                                     <li class="anim loadAnimX loadAnimXopp-sm">
                                         <span>
-                                            <i class="icon-phone" style="font-size: 18px;"></i>
+                                        <i class="icon-envelope" style="font-size: 18px;"></i> 
                                         </span>
                                         <span>
                                             <a href="mailto:contact@seaventure.live">contact@seaventure.live</a>

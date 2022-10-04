@@ -2,7 +2,9 @@
     <div class="container">
         <a href="index.php">
             <figure class="main-header__logo">
-                <img src="assets/images/seaventure-logo-lg.svg" alt="seaventures-logo" title="seaventure" />
+                <img src="assets/images/white-logo.png" alt="seaventures-logo" title="seaventure" />
+                <img src="assets/images/white-2.png" alt="seaventures-logo" title="seaventure" />
+
             </figure>
         </a>
         <nav class="main-nav">

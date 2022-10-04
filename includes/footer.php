@@ -52,17 +52,19 @@
                     <dl class="page-links">
                         <dt>Connect</dt>
                         <dd>
-                            <a href="http://www.facebook.com/seaventure.live" target="_blank" rel="noopener noreferrer">Facebook</a>
-                        </dd>
-                        <dd>
-                            <a href="https://instagram.com/teamseaventure?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        </dd>
-                        <dd>
                             <a href="http://www.linkedin.com/company/seaventure" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.facebook.com/seaventure.live" target="_blank" rel="noopener noreferrer">Facebook</a>
                         </dd>
                         <dd>
                             <a href="https://wa.me/97143887184?text=Test" target="_blank" rel="noopener noreferrer">Whatsapp</a>
                         </dd>
+                        <dd>
+                            <a href="https://instagram.com/teamseaventure?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </dd>
+                     
+                       
                     </dl>
                 </nav>
             </div>

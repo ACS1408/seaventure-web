@@ -15,13 +15,16 @@
     }
     &__logo {
         margin-bottom: 0;
-        max-width: 150px;
+        max-width: 200px;
+        display: flex;
+        align-items: center;        
         @include max(767.98) {
-            max-width: 120px;
+            max-width: 180px;
         }
         img {
             width: 100%;
-            filter: invert(1);
+            // filter: invert(1);
+            max-height: 100px;
         }
     }
     .hamburger {
