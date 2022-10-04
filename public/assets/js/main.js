@@ -166,6 +166,7 @@ $(document).ready(function() {
     $('a[data-section]').click(function(e){
         const currentSection = '#' + $(this).attr('data-section');
         const sectionTop = $(currentSection).offset().top;
+        $('body').removeClass('menu-open');
         $('html,body').animate({ scrollTop: sectionTop }, 400);
         return false; 
     });

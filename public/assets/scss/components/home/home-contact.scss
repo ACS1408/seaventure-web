@@ -74,10 +74,12 @@
             color: black;
             font-weight: $font-semibold;
             margin-bottom: 15px;
+            text-align: left;
         }
         address {
             @extend %section-description;
             margin-bottom: 5px;
+            text-align: left;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -149,6 +151,7 @@
         padding-top: 78px;
         max-width: 450px;
         margin-left: auto;
+        margin-right: auto;
         // form disabled styles--------
         height: 100%;
         display: flex;
@@ -157,7 +160,8 @@
         // ----------------------------
         @include max(991.98) {
             max-width: 100%;
-            padding-top: 30px;
+            padding-top: 0;
+            justify-content: flex-start;
         }
         .form-group {
             position: relative;
